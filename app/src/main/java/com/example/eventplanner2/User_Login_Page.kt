@@ -21,24 +21,24 @@ class User_Login_Page : AppCompatActivity() {
         val password = binding.pswdInput.toString() // Replace with the entered password
 
         val isVerified = dbHelper.verifyUserCredentials(email, password)
-//        binding.submitButton.setOnClickListener {
-//            startActivity(Intent(this, User_Main_Page::class.java))
-//        }
+        binding.submitButton.setOnClickListener {
+            startActivity(Intent(this, User_Main_Page::class.java))
+        }
 
-        if (isVerified) {
-            // Credentials are correct; allow access
-            Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
-            binding.submitButton.setOnClickListener {
-                startActivity(Intent(this, User_Main_Page::class.java))
-            }
-
-        } else {
-            // Credentials are incorrect; show an error message
-            Toast.makeText(this, "Unsuccessful!", Toast.LENGTH_SHORT).show()
+//        if (isVerified) {
+//            // Credentials are correct; allow access
+//            Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
 //            binding.submitButton.setOnClickListener {
 //                startActivity(Intent(this, User_Main_Page::class.java))
 //            }
-        }
+//
+//        } else {
+//            // Credentials are incorrect; show an error message
+//            Toast.makeText(this, "Unsuccessful!", Toast.LENGTH_SHORT).show()
+////            binding.submitButton.setOnClickListener {
+////                startActivity(Intent(this, User_Main_Page::class.java))
+////            }
+//        }
 
         binding.signUpButton.setOnClickListener {
             startActivity(Intent(this, User_SignUp_Page::class.java))
