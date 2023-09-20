@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EventPlanner2</string>
+    <string-array name="Maintainance">
+        <item>Membership Management</item>
+        <item>User Management</item>
+        <item>Vendor Management</item>
+    </string-array>
+    <string-array name="Category">
+        <item>Catering</item>
+        <item>Florist</item>
+        <item>Decoration</item>
+        <item>Lightening</item>
+    </string-array>
+    <string-array name="Category_Text">
+        <item>Select</item>
+    </string-array>
+    <string-array name="Maintainance_Text">
+        <item>Select</item>
+    </string-array>
+</resources>
