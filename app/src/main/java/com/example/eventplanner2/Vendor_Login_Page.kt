@@ -23,6 +23,11 @@ class Vendor_Login_Page : AppCompatActivity() {
 
         val newRowId = dbHelper.insertVendor(vendorId, vendorPassword)
 
+        binding.submitButton.setOnClickListener {
+//            Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, Vendor_Main_Page::class.java))
+        }
+
         if (newRowId != -1L) {
             // Data inserted successfully, newRowId contains the ID of the new row
             binding.submitButton.setOnClickListener {
@@ -31,7 +36,7 @@ class Vendor_Login_Page : AppCompatActivity() {
             }
         } else {
             // Insertion failed
-            Toast.makeText(this, "Unsuccessful", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "Unsuccessful", Toast.LENGTH_SHORT).show()
         }
 
         dbHelper.close()
