@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EventPlanner2</string>
+    <string name="app_name">EventPlanner</string>
     <string-array name="Maintainance">
         <item>Membership Management</item>
         <item>User Management</item>
